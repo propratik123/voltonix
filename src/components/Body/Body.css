@@ -1,0 +1,85 @@
+/* src/components/Body/Body.css */
+body {
+  font-family: 'Arial', sans-serif;
+  /* background-color: #000; */ /* Remove black background color */
+  background: url('https://images.squarespace-cdn.com/content/v1/5f42f0a79f9f8d5592cba4f8/45490637-8634-470b-a073-8b8b4fde89f2/IMG_7112.JPG') no-repeat center center fixed; /* Replace 'your-background-image.jpg' with your image path */
+  background-size: cover;
+  padding: 20px;
+  color: black; /* White text color */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left !important; /* Align the heading to the left */
+  color: #5e5a38; /* Electric yellow color */
+}
+
+span {
+  background-color: #d8f864; /* Electric yellow background color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 8px; /* Add rounded corners */
+  font-weight: bold; /* Bold font */
+  color: #000; /* Black text color */
+}
+
+span {
+  
+}
+
+/* Card Styles */
+.card {
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+.card-image {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffeb3b; /* Electric yellow color */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #eee; /* Light gray text color */
+}
+
+.card-text ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-text li {
+  font-size: 1rem;
+  color: #eee;
+  margin-right: 20px;
+}
+
+/* Add more styles based on your design preferences */
+.welcome-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners if desired */
+  color: #000; /* Black text color */
+}

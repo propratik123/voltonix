@@ -1,0 +1,79 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0; /* Set margin to zero */
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0; /* Set margin to zero */
+}
+
+.logo img {
+  max-height: 200px;
+  max-width: 60%;
+}
+
+.voltonix-logo {
+  max-height: 1080px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffeb3b;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-links a:hover {
+  text-shadow: 0 0 10px #ffeb3b;
+}
+
+.logo:hover {
+  text-shadow: 0 0 10px #ffeb3b;
+}

@@ -1,0 +1,21 @@
+/* src/components/Contact/Contact.css */
+.contact-container {
+  max-width: 100%;
+  padding: 40px 5px;
+  text-align: left; /* Align text to the left */
+  background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+   /* Center the container and provide some spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Adjust text color as needed */
+}
+
+.contact-container p {
+  font-size: 1rem;
+  color: #555; /* Adjust text color as needed */
+}
