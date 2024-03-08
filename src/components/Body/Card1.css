@@ -1,4 +1,5 @@
 /* src/components/Body/Card1.css */
+
 .card {
   display: flex;
   border: none;
@@ -99,4 +100,14 @@
 
 .card-link {
   text-decoration: none; /* Remove underline style for the link */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Stack elements in a column for smaller screens */
+  }
+
+  .card-content {
+    order: 2; /* Move content below the image in mobile view */
+  }
 }

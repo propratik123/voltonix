@@ -1,5 +1,4 @@
 /* src/components/Navbar/Navbar.css */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -15,6 +14,8 @@
   align-items: center;
   height: 100%;
   margin: 0; /* Set margin to zero */
+  padding: 10px; /* Add padding for better spacing */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .logo {
@@ -40,14 +41,10 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Adjust layout for mobile */
-  position: absolute;
-  top: 60px; /* Adjust the distance from the top */
-  left: 0;
-  right: 0;
+  flex-direction: row; /* Display links in a row for mobile view */
   background-color: #000;
-  display: none; /* Hide the links by default */
-  transition: display 0.3s ease; /* Add a smooth transition for better visibility */
+  z-index: 99; /* Place the links above the content */
+  order: 2; /* Set the order to 2 to appear below the logo in mobile view */
 }
 
 .nav-links.active {
@@ -55,7 +52,7 @@
 }
 
 .nav-links li {
-  margin-bottom: 10px; /* Add spacing between links for mobile */
+  margin-right: 20px; /* Add spacing between links for mobile */
 }
 
 .nav-links a {
@@ -87,22 +84,12 @@
   text-shadow: 0 0 10px #ffeb3b;
 }
 
-.logo:hover + .nav-links,
-.nav-links:hover {
-  display: flex; /* Display links when the logo or links are hovered */
+.logo:hover + .nav-links {
+  display: flex; /* Display links when the logo is hovered */
 }
 
 @media screen and (min-width: 768px) {
   .nav-links {
-    flex-direction: row; /* Revert to row layout for larger screens */
-    position: relative;
-    top: 0;
-    background-color: transparent;
-    display: flex;
-  }
-
-  .nav-links li {
-    margin-bottom: 0;
-    margin-right: 20px;
+    order: 1; /* Set the order to 1 to appear above the logo for larger screens */
   }
 }
