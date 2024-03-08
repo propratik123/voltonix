@@ -1,4 +1,5 @@
 /* src/components/Team/Team.css */
+
 .modal-content {
   display: flex;
   justify-content: center;
@@ -9,8 +10,10 @@
 }
 
 .modal-content img {
-  width: 580px; /* Set your desired width */
-  height: 900px; /* Set your desired height */
+  width: 100%; /* Make the image responsive to the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 580px; /* Set your desired max width */
+  max-height: 900px; /* Set your desired max height */
   object-fit: contain; /* Maintain aspect ratio and contain within specified dimensions */
 }
 
@@ -44,4 +47,15 @@
   right: 10px;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .modal {
+    max-width: 90%; /* Adjust the max-width for smaller screens */
+  }
+
+  .close {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
 }

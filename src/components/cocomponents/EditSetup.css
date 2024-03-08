@@ -1,54 +1,69 @@
 /* src/components/cocomponents/EditSetup.css */
 .edit-setup-container {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* White transparent background */
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-  
-  .setup-heading {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .setup-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .setup-image img {
-    width: 100%; /* Use 100% width to make the image fill its container */
-    max-width: 600px; /* Set a maximum width to control the size */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8px;
-  }
-  
-  .setup-description {
-    flex-grow: 1;
-  }
-  
-  .description-bg {
-    background-color: rgba(255, 255, 255, 0.9); /* White transparent background */
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .setup-description p {
-    margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.setup-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.setup-content {
+  display: flex;
+  flex-direction: column; /* Change to column on small screens */
+}
+
+.setup-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.setup-description {
+  flex-grow: 1;
+  margin-top: 15px; /* Adjust margin for better spacing on small screens */
+}
+
+.description-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.setup-description p {
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.setup-description ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.setup-description li {
+  margin-bottom: 5px;
+  background-color: rgba(201, 218, 218, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .edit-setup-container {
     padding: 10px;
-    border-radius: 8px;
   }
-  
-  .setup-description ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+
+  .setup-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
   }
-  
-  .setup-description li {
-    margin-bottom: 5px;
-    background-color: rgba(201, 218, 218, 0.8);
+
+  .setup-content {
+    margin-top: 15px;
   }
-  
+}
