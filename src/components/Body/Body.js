@@ -6,6 +6,7 @@ import Card2 from './Card2';
 import Card3 from './Card3';
 import Card4 from './Card4'; 
 import Contact from '../Contact/Contact';
+import Connect from '../Connect/Connect';
 
 const Body = () => {
   return (
@@ -23,6 +24,9 @@ const Body = () => {
         <Card4 />
       </div>
       <Contact />
+      
+        <Connect />
+      
     </div>
   );
 };
